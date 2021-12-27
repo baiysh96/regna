@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Regna</title>
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-
     <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
@@ -13,8 +12,11 @@
     <header class="header">
         <div class="container header-container">
             <a href="#" class="logo-link"><img class="logo-img" src="./images/logo.png" alt="logo"></a>
+           <div class="before"></div>
+            <span></span>
+            <div class="after"></div>
             <nav class="menu">
-                <a class="menu-link" href="#">home</a>
+                <a class="menu-link" style="margin-left: 0" href="#">home</a>
                 <a class="menu-link" href="#">about</a>
                 <a class="menu-link" href="#">services</a>
                 <a class="menu-link" href="#">portfolio</a>
@@ -43,7 +45,8 @@
                         <div class="about-icon"><i class='bx bxs-briefcase'></i></div>
                         <div class="about-list">
                             <h4 class="about-list-title">eiusmod tempor</h4>
-                            <p class="about-list-desc">Et harum quidem rerum facilis est et expedita distinctio. Nam libero
+                            <p class="about-list-desc">Et harum quidem rerum facilis est et expedita distinctio. Nam
+                                libero
                                 tempore, cum soluta nobis est eligendi</p>
                         </div>
                     </div>
@@ -51,7 +54,8 @@
                         <div class="about-icon"><i class='bx bx-list-check'></i></div>
                         <div class="about-list">
                             <h4 class="about-list-title">eiusmod tempor</h4>
-                            <p class="about-list-desc">Et harum quidem rerum facilis est et expedita distinctio. Nam libero
+                            <p class="about-list-desc">Et harum quidem rerum facilis est et expedita distinctio. Nam
+                                libero
                                 tempore, cum soluta nobis est eligendi</p>
                         </div>
                     </div>
@@ -59,13 +63,13 @@
                         <div class="about-icon"><i class='bx bxs-binoculars'></i></div>
                         <div class="about-list">
                             <h4 class="about-list-title">eiusmod tempor</h4>
-                            <p class="about-list-desc">Et harum quidem rerum facilis est et expedita distinctio. Nam libero
+                            <p class="about-list-desc">Et harum quidem rerum facilis est et expedita distinctio. Nam
+                                libero
                                 tempore, cum soluta nobis est eligendi</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-6 about-img">
-                    <p class="about-description">Lorem ipsum dolor sexercitationem fugiat placeat quos?</p>
+                <div class="col-6 about-img" style="padding-right: 0">
                 </div>
             </div>
         </div>
@@ -117,11 +121,12 @@
                             aliquip ex ea commodo consequat tarad limino ata</p>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-4  padding-right">
                     <div class="services-item">
                         <div class="services-icon"><i class='bx bx-bar-chart-alt'></i></div>
                         <h4 class="services-list-title">sed ut perspiciatis</h4>
-                        <p class="services-list-desc">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        <p class="services-list-desc">Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum
                             dolore eu fugiat nulla pariatur fugiat</p>
                     </div>
                 </div>
@@ -141,11 +146,12 @@
                             blanditiis praesentium voluptatum deleniti atque</p>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-4  padding-right">
                     <div class="services-item">
                         <div class="services-icon"><i class='bx bx-calendar'></i></div>
                         <h4 class="services-list-title">eiusmod tempor</h4>
-                        <p class="services-list-desc">Et harum quidem rerum facilis est et expedita distinctio. Nam libero
+                        <p class="services-list-desc">Et harum quidem rerum facilis est et expedita distinctio. Nam
+                            libero
                             tempore, cum soluta nobis est eligendi</p>
                     </div>
                 </div>
@@ -154,15 +160,17 @@
     </section>
     <section class="cta-action">
         <div class="container">
-           <div class="row">
-               <div class="col-9">
-                   <h2 class="cta-title">Call To Action</h2>
-                   <p class="cta-desc">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                       nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                       anim id est laborum.</p>
-               </div>
-               <div class="col-3 cta-action-col-3"><a href="#" class="btn cta-btn">Call to action</a></div>
-           </div>
+            <div class="row">
+                <div class="col-9">
+                    <h2 class="cta-title">Call To Action</h2>
+                    <p class="cta-desc">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat
+                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt mollit
+                        anim id est laborum.</p>
+                </div>
+                <div class="col-3 cta-action-col-3"><a href="#" class="btn cta-btn">Call to action</a></div>
+            </div>
         </div>
     </section>
     <section class="portfolio">
@@ -173,7 +181,7 @@
             </p>
             <div class="row">
                 <ul class="portfolio-menu">
-                    <li class="portfolio-list">All</li>
+                    <li class="portfolio-list filter-active">All</li>
                     <li class="portfolio-list">App</li>
                     <li class="portfolio-list">Card</li>
                     <li class="portfolio-list">Web</li>
@@ -188,10 +196,10 @@
                                 <h4 class="overlay-title">App 1</h4>
                                 <p class="overlay-desc">App</p>
                             </div>
-                          <div class="overlay-icon">
-                              <i class='bx bx-plus'></i>
-                              <i class='bx bx-link' ></i>
-                          </div>
+                            <div class="overlay-icon">
+                                <i class='bx bx-plus'></i>
+                                <i class='bx bx-link'></i>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -205,13 +213,13 @@
                             </div>
                             <div class="overlay-icon">
                                 <i class='bx bx-plus'></i>
-                                <i class='bx bx-link' ></i>
+                                <i class='bx bx-link'></i>
                             </div>
                         </div>
 
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-4 padding-right">
                     <div class="portfolio-item">
                         <img class="portfolio-img" src="./images/portfolio-3.jpeg" alt="portfolio">
                         <div class="overlay">
@@ -221,7 +229,7 @@
                             </div>
                             <div class="overlay-icon">
                                 <i class='bx bx-plus'></i>
-                                <i class='bx bx-link' ></i>
+                                <i class='bx bx-link'></i>
                             </div>
 
                         </div>
@@ -237,7 +245,7 @@
                             </div>
                             <div class="overlay-icon">
                                 <i class='bx bx-plus'></i>
-                                <i class='bx bx-link' ></i>
+                                <i class='bx bx-link'></i>
                             </div>
                         </div>
                     </div>
@@ -252,13 +260,13 @@
                             </div>
                             <div class="overlay-icon">
                                 <i class='bx bx-plus'></i>
-                                <i class='bx bx-link' ></i>
+                                <i class='bx bx-link'></i>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="portfolio-item">
+                    <div class="portfolio-item padding-right">
                         <img class="portfolio-img" src="./images/portfolio-6.jpeg" alt="portfolio">
                         <div class="overlay">
                             <div class="overlay-item">
@@ -267,7 +275,7 @@
                             </div>
                             <div class="overlay-icon">
                                 <i class='bx bx-plus'></i>
-                                <i class='bx bx-link' ></i>
+                                <i class='bx bx-link'></i>
                             </div>
                         </div>
                     </div>
@@ -282,7 +290,7 @@
                             </div>
                             <div class="overlay-icon">
                                 <i class='bx bx-plus'></i>
-                                <i class='bx bx-link' ></i>
+                                <i class='bx bx-link'></i>
                             </div>
                         </div>
                     </div>
@@ -297,13 +305,13 @@
                             </div>
                             <div class="overlay-icon">
                                 <i class='bx bx-plus'></i>
-                                <i class='bx bx-link' ></i>
+                                <i class='bx bx-link'></i>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="portfolio-item">
+                    <div class="portfolio-item  padding-right">
                         <img class="portfolio-img" src="./images/portfolio-9.jpeg" alt="portfolio">
                         <div class="overlay">
                             <div class="overlay-item">
@@ -312,7 +320,7 @@
                             </div>
                             <div class="overlay-icon">
                                 <i class='bx bx-plus'></i>
-                                <i class='bx bx-link' ></i>
+                                <i class='bx bx-link'></i>
                             </div>
                         </div>
                     </div>
@@ -361,7 +369,7 @@
                         <a href="" class="social-item"><i class='bx bxl-linkedin-square'></i></a>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-3  padding-right">
                     <div class="team-item">
                         <img src="./images/team-4.jpeg" alt="team" class="team-img">
                     </div>
@@ -386,8 +394,8 @@
                     width="100%" height="380" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
         <div class="container">
-            <div class="row contact-info">
-                <div class="col-3">
+            <div class="row justify-center">
+                <div class="col-3" style="padding-right: 24px">
                     <div class="contact-info-item">
                         <div class="contact-icons"><i class='bx bx-current-location'></i></div>
                         <div class="contact-data">
@@ -423,7 +431,8 @@
                         </div>
                         <div class="message">
                             <label for="coment"></label>
-                            <textarea class="form-item  t-area" placeholder="Message" id="coment"></textarea>
+                            <textarea class="form-item  t-area" placeholder="Message" id="coment" cols="119"
+                                      rows="7"></textarea>
                         </div>
                         <button class="contact-btn" type="submit">Send Message</button>
                     </form>
@@ -432,7 +441,7 @@
         </div>
     </section>
     <footer class="footer">
-        <p class="footer-copyright">© Copyright  <strong>REGNA</strong>. All Rights Reserved</p>
+        <p class="footer-copyright">© Copyright <strong>REGNA</strong>. All Rights Reserved</p>
         <p class="footer-list">Designed by <span style="color: #2dc997">BootstrapMade</span></p>
     </footer>
 </div>
