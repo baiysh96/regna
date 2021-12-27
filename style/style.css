@@ -19,21 +19,22 @@ body {
 }
 
 .wrapper {
-    min-height: 1440px;
+    min-height: 100%;
     overflow: hidden;
     display: flex;
     flex-direction: column;
 }
 
 .container {
-    max-width: 1440px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+    width: 100%;
 
 
 }
 
-@media ( min-width: 1200px) {
+@media (min-width: 1200px) {
     .container {
         max-width: 970px;
     }
@@ -112,15 +113,15 @@ body {
 .header-container {
     display: flex;
     justify-content: space-around;
-    position: fixed;
     align-items: center;
     width: 100%;
     height: 70px;
 
 }
-.logo-link{
+
+.logo-link {
     display: block;
-    margin-left: 125px;
+
 
 }
 
@@ -132,6 +133,7 @@ body {
 
 
 .menu-link {
+    font-size: 14px;
     display: inline-block;
     text-decoration: none;
     font-style: normal;
@@ -172,6 +174,10 @@ body {
     .hero-desc {
         font-size: 12px;
     }
+
+    .btn {
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -181,6 +187,10 @@ body {
     }
 
     .hero-desc {
+        font-size: 10px;
+    }
+
+    .btn {
         font-size: 10px;
     }
 }
@@ -194,11 +204,14 @@ body {
     .hero-desc {
         font-size: 8px;
     }
+
+    .btn {
+        font-size: 10px;
+    }
 }
 
 
 .hero-title {
-    font-size: 48px;
     margin: 30px 0 10px 0;
     font-weight: 700;
     text-transform: uppercase;
@@ -208,7 +221,7 @@ body {
 
 
 .hero-desc {
-    font-size: 24px;
+
     color: #eee;
     margin-bottom: 50px;
 
@@ -218,7 +231,6 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 16px;
     letter-spacing: 1px;
     background-color: unset;
     display: inline-block;
@@ -312,7 +324,6 @@ body {
 
 
 .about-title {
-    font-size: 32px;
     font-weight: 700;
     text-transform: capitalize;
     margin-bottom: 20px;
@@ -372,7 +383,7 @@ body {
 
 .about-img {
     background: url("../images/about-image.jpeg") no-repeat top center;
-
+    background-size: 170%;
 
 }
 
@@ -602,7 +613,7 @@ body {
     padding-right: 24px;
 }
 
-.cta-action-col-3{
+.cta-action-col-3 {
     width: 25%;
     display: flex;
     align-items: center;
@@ -764,17 +775,19 @@ body {
     margin-bottom: 50px;
 }
 
-.contact-info{
+.contact-info {
     justify-content: center;
 }
-
-.col-5{
-    width: 40%;
+@media (max-width: 987px) {
+    .contact-info{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
-
-
-
+.col-5 {
+    width: 40%;
+}
 
 
 .contact-box {
@@ -832,7 +845,7 @@ body {
 
 
 .contact-form {
-   width: 100%;
+    width: 100%;
 
 }
 
