@@ -11,18 +11,14 @@ img {
 
 }
 
+.html {
+    scroll-behavior: smooth;
+}
+
 body {
 
     font-family: 'Open Sans', sans-serif;
 
-
-}
-
-.wrapper {
-    min-height: 100%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
 }
 
 .container {
@@ -30,32 +26,6 @@ body {
     margin: 0 auto;
     padding: 0 15px;
     width: 100%;
-
-
-}
-
-@media (min-width: 1320px) {
-    .container {
-        max-width: 1200px;
-    }
-}
-
-@media (max-width: 992px) {
-    .container {
-        max-width: 750px;
-    }
-}
-
-@media (max-width: 767px) {
-    .container {
-        max-width: 540px;
-    }
-}
-
-@media (max-width: 543px) {
-    .container {
-        max-width: 320px;
-    }
 }
 
 .header {
@@ -84,12 +54,6 @@ body {
 
 }
 
-.menu {
-    display: block;
-    margin-left: 100px;
-
-}
-
 
 .menu-link {
     font-size: 14px;
@@ -101,14 +65,38 @@ body {
     line-height: 29px;
     color: #fff;
     text-transform: uppercase;
-    transition: left;
+    transition: 0.5s;
+    position: relative;
 
 
+}
+.burger{
+    text-transform: none;
+    display: none;
+    font-size: 30px;
+    color: #fff;
+
+}
+
+.menu-link:before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #2dc997;
+    position: absolute;
+    bottom: -5px;
+    transform: scale(0);
+    transition: 0.5s;
+}
+
+.menu-link:hover:before {
+    transform: scale(1);
+    background-color: #2dc997;
 }
 
 
 .menu-link:hover {
-    border-bottom: 2px solid #2dc997;
+    color: #2dc997;
 }
 
 
@@ -127,7 +115,7 @@ body {
 
 .hero-title {
     font-size: 48px;
-    margin: 30px 0 10px 0;
+    margin-bottom: 10px;
     font-weight: 700;
     text-transform: uppercase;
     color: #fff;
@@ -136,7 +124,7 @@ body {
 
 
 .hero-desc {
-   font-size: 24px;
+    font-size: 24px;
     color: #eee;
     margin-bottom: 50px;
 
@@ -175,11 +163,9 @@ body {
 
 .col-6 {
     max-width: 50%;
+    padding: 0 16px;
 
 
-}
-.padding-right{
-    padding-right: 0;
 }
 
 
@@ -245,19 +231,10 @@ body {
 }
 
 .about-img {
+   width: 376px;
     background: url("../images/about-image.jpeg") center top no-repeat;
-    width: 100%;
-
-
+    background-size: 120%;
 }
-@media (max-width:967px){
-    .about{
-        display: flex;
-        flex-direction: column;
-    }
-
-}
-
 
 .facts {
     padding: 80px 0 60px;
@@ -289,7 +266,7 @@ body {
 
 .col-3 {
     width: 25%;
-    padding-right: 32px;
+    padding: 0 16px;
 
 }
 
@@ -314,7 +291,7 @@ body {
 
 .col-4 {
     width: 33.333%;
-    padding-right: 24px;
+    padding: 0 12px;
 }
 
 .services-item {
@@ -347,7 +324,7 @@ body {
 }
 
 
-.services-icon:hover {
+.services-item:hover .services-icon{
     background: #fff;
     border: 1px solid #2dc997;
     color: #2dc997;
@@ -375,7 +352,7 @@ body {
 
 .col-9 {
     width: 75%;
-    padding-right: 24px;
+    padding: 0 12px;
 }
 
 .cta-action-col-3 {
@@ -441,7 +418,8 @@ body {
     color: #fff;
     background: #2dc997;
 }
-.filter-active{
+
+.filter-active {
     color: #fff;
     background: #2dc997;
 }
@@ -511,24 +489,25 @@ body {
 
 }
 
+.team-item {
+    text-align: center;
+}
 
 .team-img {
-
     transition: 0.7s;
     margin-bottom: 50px;
 }
 
 .team-item:hover .team-img {
-    transform: scale(1.2);
+    transform: scale(0.9) skew(10deg);
 }
 
 
 .social-item {
     margin-right: 5px;
     text-decoration: none;
-
-    color: #343b40;
-
+     font-size: 24px;
+    color: #b3b3b3;
 }
 
 .social-item:hover {
@@ -546,14 +525,6 @@ body {
 
 .justify-center {
     justify-content: center;
-}
-
-@media (max-width: 987px) {
-    .contact-info {
-        display: flex;
-        flex-direction: column;
-    }
-
 }
 
 .col-5 {
@@ -598,20 +569,27 @@ body {
 .contact-icons {
     display: flex;
     justify-content: center;
+
 }
 
 
 .contact-icon {
-    display: inline;
-    font-size: 32px;
+    font-size: 28px;
     text-decoration: none;
     border: none;
-    color: #111;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333333;
+    border-radius: 50%;
 
 }
 
 .contact-icon:hover {
-    color: #2dc997;
+    background-color: #2dc997;
 }
 
 
