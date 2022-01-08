@@ -70,12 +70,53 @@ body {
 
 
 }
-.burger{
-    text-transform: none;
-    display: none;
-    font-size: 30px;
-    color: #fff;
 
+.burger{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+}
+.burger span{
+    width: 50px;
+    height: 2px;
+    background-color: #fff;
+    z-index: 2;
+    position: relative;
+}
+span:before{
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: #fff;
+    z-index: 2;
+    position: absolute;
+    top:-10px;
+    left: 0;
+}
+span:after{
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: #fff;
+    z-index: 2;
+    position: absolute;
+    bottom:-10px;
+    right: 0;
+}
+.show-menu span:before{
+    transform: rotate(-40deg);
+}
+.show-menu span:after{
+    transform: rotate(40deg);
+}
+.show-menu span:before,.show-menu span:after{
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.show-menu span{
+    background-color: transparent;
 }
 
 .menu-link:before {
